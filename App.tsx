@@ -36,6 +36,9 @@ export default function App() {
             name="Home"
             component={HomeScreen}
             options={{
+              header: ({ navigation }) => (
+                <Topbar navigation={navigation} title="Home" />
+              ),
               tabBarIcon: () => (
                 <IconFeather name="home" size={26} color="#000" />
               ),
@@ -45,7 +48,9 @@ export default function App() {
             name="Diário"
             component={Daily}
             options={{
-              header: ({ navigation }) => <Topbar navigation={navigation} title="Diário" />,
+              header: ({ navigation }) => (
+                <Topbar navigation={navigation} title="Diário" />
+              ),
               tabBarIcon: () => (
                 <View
                   style={{ alignItems: "center", justifyContent: "center" }}
@@ -68,6 +73,9 @@ export default function App() {
             name="Comidas"
             component={AddFoodScreen}
             options={{
+              header: ({ navigation }) => (
+                <Topbar navigation={navigation} title="Comidas" />
+              ),
               tabBarIcon: () => (
                 <IconMCI name="food-outline" size={26} color="black" />
               ),
