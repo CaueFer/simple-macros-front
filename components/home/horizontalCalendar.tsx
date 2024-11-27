@@ -47,7 +47,7 @@ const HorizontalCalendar = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    minHeight: 145,
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#f5f5f5",

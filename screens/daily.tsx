@@ -1,12 +1,12 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import Topbar from "../components/ui/topbar";
-import HorizontalCalendar from "../components/daily/horizontalCalendar";
+import HorizontalCalendar from "../components/home/horizontalCalendar";
 
 function Daily() {
   return (
     <View style={styles.container}>
-      <HorizontalCalendar />
+      
     </View>
   );
 }
